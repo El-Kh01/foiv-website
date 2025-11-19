@@ -60,29 +60,34 @@ class FoivManager {
             }
 
             const response = await fetch(`foivs/${foivId}.html`);
+            if (!response.ok) {
+                throw new Error(`Файл не найден: ${foivId}.html`);
+            }
             const content = await response.text();
             
             document.getElementById('foivContent').innerHTML = content;
             this.currentFoiv = foivId;
             
             // Инициализируем аккордеон после загрузки контента
-            this.initAccordion();
+            setTimeout(() => this.initAccordion(), 0);
         } catch (error) {
             console.error('Ошибка загрузки контента ФОИВ:', error);
             document.getElementById('foivContent').innerHTML = `
                 <div class="error-message">
                     <h3>Ошибка загрузки</h3>
-                    <p>Не удалось загрузить информацию о выбранном ФОИВе.</p>
+                    <p>Не удалось загрузить информацию о выбранном ФОИВе: ${error.message}</p>
+                    <p>Проверьте, существует ли файл foivs/${foivId}.html</p>
                 </div>
             `;
         }
     }
 
     initAccordion() {
-        // Добавляем обработчики для всех заголовков секций
-        document.querySelectorAll('.section-header').forEach(header => {
-            // Убираем старые обработчики
-            header.replaceWith(header.cloneNode(true));
+        // Удаляем старые обработчики
+        const headers = document.querySelectorAll('.section-header');
+        headers.forEach(header => {
+            const newHeader = header.cloneNode(true);
+            header.parentNode.replaceChild(newHeader, header);
         });
 
         // Добавляем новые обработчики
@@ -96,13 +101,16 @@ class FoivManager {
                     icon.textContent = section.classList.contains('active') ? '▲' : '▼';
                 }
             });
+
+            // Убираем любые onclick атрибуты
+            header.removeAttribute('onclick');
         });
 
         // Автоматически открываем первую секцию
         const firstSection = document.querySelector('.section-content');
         if (firstSection) {
             firstSection.classList.add('active');
-            const icon = firstSection.previousElementSibling.querySelector('.toggle-icon');
+            const icon = firstSection.previousElementSibling?.querySelector('.toggle-icon');
             if (icon) {
                 icon.textContent = '▲';
             }
@@ -142,12 +150,13 @@ class FoivManager {
     }
 }
 
-// Глобальная функция для совместимости (на всякий случай)
+// Глобальная функция для обратной совместимости
 window.toggleSection = function(sectionId) {
+    console.warn('toggleSection вызвана глобально - рекомендуется использовать новый подход');
     const section = document.getElementById(sectionId);
     if (!section) return;
     
-    const icon = section.previousElementSibling.querySelector('.toggle-icon');
+    const icon = section.previousElementSibling?.querySelector('.toggle-icon');
     section.classList.toggle('active');
     if (icon) {
         icon.textContent = section.classList.contains('active') ? '▲' : '▼';
