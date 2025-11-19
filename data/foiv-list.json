@@ -14,6 +14,13 @@
         "officialWebsite": "https://minzdrav.gov.ru"
     },
     {
+        "id": "minobrnauki",
+        "name": "Министерство науки и высшего образования Российской Федерации",
+        "shortName": "Минобрнауки России",
+        "sphere": "social",
+        "officialWebsite": "https://minobrnauki.gov.ru"
+    },
+    {
         "id": "minjust",
         "name": "Министерство юстиции Российской Федерации",
         "shortName": "Минюст России",
