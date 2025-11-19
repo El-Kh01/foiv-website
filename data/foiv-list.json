@@ -12,5 +12,12 @@
         "shortName": "Минюст России",
         "sphere": "political",
         "officialWebsite": "https://minjust.gov.ru"
+    },
+    {
+        "id": "rosmolodezh",
+        "name": "Федеральное агентство по делам молодежи",
+        "shortName": "Росмолодежь",
+        "sphere": "social",
+        "officialWebsite": "https://fadm.gov.ru"
     }
 ]
