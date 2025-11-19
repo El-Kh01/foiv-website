@@ -7,6 +7,13 @@
         "officialWebsite": "https://mid.ru"
     },
     {
+        "id": "minzdrav",
+        "name": "Министерство здравоохранения Российской Федерации",
+        "shortName": "Минздрав России",
+        "sphere": "social",
+        "officialWebsite": "https://minzdrav.gov.ru"
+    },
+    {
         "id": "minjust",
         "name": "Министерство юстиции Российской Федерации",
         "shortName": "Минюст России",
