@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФОИВы России - Информационная система</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Федеральные органы исполнительной власти РФ</h1>
+        <nav>
+            <ul class="sphere-filter">
+                <li><button class="filter-btn active" data-sphere="all">Все сферы</button></li>
+                <li><button class="filter-btn" data-sphere="political">Политическая</button></li>
+                <li><button class="filter-btn" data-sphere="economic">Экономическая</button></li>
+                <li><button class="filter-btn" data-sphere="social">Социальная</button></li>
+                <li><button class="filter-btn" data-sphere="security">Безопасность</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Поиск ФОИВ...">
+                </div>
+                <div id="foivList" class="foiv-list">
+                    <!-- Список ФОИВов будет загружен динамически -->
+                </div>
+            </div>
+            
+            <div class="content">
+                <div id="foivContent" class="foiv-content">
+                    <div class="welcome-message">
+                        <h2>Добро пожаловать!</h2>
+                        <p>Выберите ФОИВ из списка слева для просмотра подробной информации.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Информационная система ФОИВов России</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
