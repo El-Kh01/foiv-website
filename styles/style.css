@@ -187,6 +187,352 @@ footer {
     margin-top: 2rem;
 }
 
+/* НОВЫЕ СТИЛИ ДЛЯ АККОРДЕОНА И КОМПОНЕНТОВ МИДа */
+
+.foiv-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.foiv-details .foiv-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-bottom: none;
+}
+
+.foiv-details .foiv-title {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+    font-weight: 300;
+    color: white;
+}
+
+.foiv-details .foiv-short {
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+    opacity: 0.9;
+    color: white;
+}
+
+.foiv-details .foiv-official-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    color: #1e3c72;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 0;
+}
+
+.foiv-details .foiv-official-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.sections-container {
+    margin-top: 30px;
+}
+
+.section-header {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #1e3c72;
+    transition: all 0.3s ease;
+}
+
+.section-header:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.section-header h2 {
+    margin: 0;
+    flex: 1;
+    color: #2c3e50;
+    font-size: 1.4em;
+}
+
+.toggle-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.section-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.section-content.active {
+    max-height: 5000px;
+}
+
+.subsection {
+    margin: 25px 0;
+}
+
+.subsection h3 {
+    color: #34495e;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    margin-bottom: 15px;
+}
+
+/* Стили для списков документов */
+.documents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.documents-list li {
+    padding: 8px 12px;
+    margin: 6px 0;
+    background: #f8f9fa;
+    border-left: 4px solid #1e3c72;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.documents-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(3px);
+}
+
+.documents-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.doc-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.doc-item:hover {
+    background: #e3f2fd;
+    transform: translateY(-1px);
+}
+
+.doc-icon {
+    margin-right: 12px;
+    font-size: 1.1em;
+}
+
+/* Стили для организаций */
+.orgs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.org-card {
+    padding: 15px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.org-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Таймлайн */
+.timeline {
+    position: relative;
+    padding-left: 25px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #1e3c72;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    background: #1e3c72;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.timeline-content {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    border-left: 3px solid #1e3c72;
+}
+
+/* Сетки функций и полномочий */
+.functions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.function-category {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.numbered-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: item;
+}
+
+.numbered-list li {
+    counter-increment: item;
+    padding: 8px 0 8px 35px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.numbered-list li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1e3c72;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.powers-grid, .services-grid, .society-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.power-item, .service-card, .society-card {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.power-item:hover, .service-card:hover, .society-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.power-icon {
+    font-size: 1.3em;
+    margin-right: 12px;
+}
+
+.power-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Структура */
+.leadership-grid, .departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.leader-card {
+    padding: 15px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dept-group {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.dept-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dept-group li {
+    padding: 6px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dept-group li:last-child {
+    border-bottom: none;
+}
+
+.structure-section {
+    margin-bottom: 20px;
+}
+
+.structure-section h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .container {
@@ -202,4 +548,53 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    
+    .foiv-details {
+        padding: 10px;
+    }
+    
+    .foiv-details .foiv-title {
+        font-size: 1.8em;
+    }
+    
+    .functions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .documents-grid, .powers-grid, .services-grid, .society-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header {
+        padding: 15px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.2em;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .timeline-content {
+        margin-left: 20px;
+        padding: 12px;
+    }
+    
+    .timeline-year {
+        left: -20px;
+    }
+}
+
+/* Дополнительные утилиты */
+.error-message {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.error-message h3 {
+    color: #dc3545;
+    margin-bottom: 15px;
 }
