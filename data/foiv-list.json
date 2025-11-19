@@ -7,6 +7,13 @@
         "officialWebsite": "https://mid.ru"
     },
     {
+        "id": "mincifry",
+        "name": "Министерство цифрового развития, связи и массовых коммуникаций Российской Федерации",
+        "shortName": "Минцифры России",
+        "sphere": "economic",
+        "officialWebsite": "https://digital.gov.ru"
+    },
+    {
         "id": "minzdrav",
         "name": "Министерство здравоохранения Российской Федерации",
         "shortName": "Минздрав России",
