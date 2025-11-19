@@ -54,13 +54,19 @@ class FoivManager {
             });
             
             // Добавляем активный класс к выбранному элементу
-            document.querySelector(`[data-foiv="${foivId}"]`).classList.add('active');
+            const selectedItem = document.querySelector(`[data-foiv="${foivId}"]`);
+            if (selectedItem) {
+                selectedItem.classList.add('active');
+            }
 
             const response = await fetch(`foivs/${foivId}.html`);
             const content = await response.text();
             
             document.getElementById('foivContent').innerHTML = content;
             this.currentFoiv = foivId;
+            
+            // Инициализируем аккордеон после загрузки контента
+            this.initAccordion();
         } catch (error) {
             console.error('Ошибка загрузки контента ФОИВ:', error);
             document.getElementById('foivContent').innerHTML = `
@@ -69,6 +75,37 @@ class FoivManager {
                     <p>Не удалось загрузить информацию о выбранном ФОИВе.</p>
                 </div>
             `;
+        }
+    }
+
+    initAccordion() {
+        // Добавляем обработчики для всех заголовков секций
+        document.querySelectorAll('.section-header').forEach(header => {
+            // Убираем старые обработчики
+            header.replaceWith(header.cloneNode(true));
+        });
+
+        // Добавляем новые обработчики
+        document.querySelectorAll('.section-header').forEach(header => {
+            header.addEventListener('click', (e) => {
+                const section = e.currentTarget.nextElementSibling;
+                const icon = e.currentTarget.querySelector('.toggle-icon');
+                
+                if (section && icon) {
+                    section.classList.toggle('active');
+                    icon.textContent = section.classList.contains('active') ? '▲' : '▼';
+                }
+            });
+        });
+
+        // Автоматически открываем первую секцию
+        const firstSection = document.querySelector('.section-content');
+        if (firstSection) {
+            firstSection.classList.add('active');
+            const icon = firstSection.previousElementSibling.querySelector('.toggle-icon');
+            if (icon) {
+                icon.textContent = '▲';
+            }
         }
     }
 
@@ -93,10 +130,27 @@ class FoivManager {
         });
 
         // Поиск
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const activeFilter = document.querySelector('.filter-btn.active').dataset.sphere;
-            this.renderFoivList(activeFilter, e.target.value);
-        });
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const activeFilter = document.querySelector('.filter-btn.active');
+                if (activeFilter) {
+                    this.renderFoivList(activeFilter.dataset.sphere, e.target.value);
+                }
+            });
+        }
+    }
+}
+
+// Глобальная функция для совместимости (на всякий случай)
+window.toggleSection = function(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+    
+    const icon = section.previousElementSibling.querySelector('.toggle-icon');
+    section.classList.toggle('active');
+    if (icon) {
+        icon.textContent = section.classList.contains('active') ? '▲' : '▼';
     }
 }
 
