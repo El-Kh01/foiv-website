@@ -28,6 +28,13 @@
         "officialWebsite": "https://minobrnauki.gov.ru"
     },
     {
+        "id": "minsport",
+        "name": "Министерство спорта Российской Федерации",
+        "shortName": "Минспорт России",
+        "sphere": "social",
+        "officialWebsite": "https://www.minsport.gov.ru"
+    },
+    {
         "id": "ran",
         "name": "Российская академия наук",
         "shortName": "РАН",
