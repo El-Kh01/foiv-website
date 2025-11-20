@@ -69,7 +69,7 @@ class FoivManager {
             this.currentFoiv = foivId;
             
             // Инициализируем аккордеон после загрузки контента
-            setTimeout(() => this.initAccordion(), 0);
+            setTimeout(() => this.initAccordion(), 100);
         } catch (error) {
             console.error('Ошибка загрузки контента ФОИВ:', error);
             document.getElementById('foivContent').innerHTML = `
@@ -99,6 +99,13 @@ class FoivManager {
                 if (section && icon) {
                     section.classList.toggle('active');
                     icon.textContent = section.classList.contains('active') ? '▲' : '▼';
+                    
+                    // Гарантируем правильное отображение контента
+                    setTimeout(() => {
+                        if (section.classList.contains('active')) {
+                            section.style.maxHeight = '50000px';
+                        }
+                    }, 50);
                 }
             });
 
@@ -106,7 +113,7 @@ class FoivManager {
             header.removeAttribute('onclick');
         });
 
-        // Автоматически открываем первую секцию
+        // Автоматически открываем первую секцию с гарантией отображения
         const firstSection = document.querySelector('.section-content');
         if (firstSection) {
             firstSection.classList.add('active');
@@ -114,6 +121,10 @@ class FoivManager {
             if (icon) {
                 icon.textContent = '▲';
             }
+            // Гарантируем, что первая секция будет видна
+            setTimeout(() => {
+                firstSection.style.maxHeight = '50000px';
+            }, 150);
         }
     }
 
@@ -161,6 +172,13 @@ window.toggleSection = function(sectionId) {
     if (icon) {
         icon.textContent = section.classList.contains('active') ? '▲' : '▼';
     }
+    
+    // Гарантируем правильное отображение
+    setTimeout(() => {
+        if (section.classList.contains('active')) {
+            section.style.maxHeight = '50000px';
+        }
+    }, 50);
 }
 
 // Инициализация при загрузке страницы
