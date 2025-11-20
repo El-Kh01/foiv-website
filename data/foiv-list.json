@@ -35,6 +35,13 @@
         "officialWebsite": "https://www.minsport.gov.ru"
     },
     {
+        "id": "mineconomy",
+        "name": "Министерство экономического развития Российской Федерации",
+        "shortName": "Минэкономразвития России",
+        "sphere": "economic",
+        "officialWebsite": "https://www.economy.gov.ru"
+    },
+    {
         "id": "ran",
         "name": "Российская академия наук",
         "shortName": "РАН",
