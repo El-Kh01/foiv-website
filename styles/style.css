@@ -291,15 +291,16 @@ footer {
     transition: transform 0.3s ease;
 }
 
+/* ИСПРАВЛЕННЫЙ АККОРДЕОН */
 .section-content {
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.8s ease;
+    transition: max-height 0.5s ease;
 }
 
 .section-content.active {
-    max-height: 50000px;
+    max-height: 5000px; /* УМЕНЬШЕНО ДО РАЗУМНОГО ЗНАЧЕНИЯ */
     overflow: visible;
 }
 
@@ -819,7 +820,7 @@ footer {
     }
     
     .section-content.active {
-        max-height: none;
+        max-height: 5000px;
         overflow: visible;
     }
 }
