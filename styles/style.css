@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
+    min-height: 100vh;
 }
 
 header {
@@ -55,6 +56,7 @@ header h1 {
     margin: 2rem auto;
     gap: 2rem;
     padding: 0 1rem;
+    align-items: flex-start;
 }
 
 .sidebar {
@@ -64,6 +66,8 @@ header h1 {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 1.5rem;
     height: fit-content;
+    position: sticky;
+    top: 2rem;
 }
 
 .search-box {
@@ -108,6 +112,12 @@ header h1 {
     margin-bottom: 0.25rem;
 }
 
+.foiv-short-name {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
 .foiv-sphere {
     font-size: 0.8rem;
     color: #666;
@@ -119,6 +129,7 @@ header h1 {
 
 .content {
     flex: 1;
+    min-width: 0;
 }
 
 .foiv-content {
@@ -126,7 +137,9 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 2rem;
-    min-height: 600px;
+    min-height: 200px;
+    height: auto;
+    overflow: visible;
 }
 
 .welcome-message {
@@ -187,13 +200,16 @@ footer {
     margin-top: 2rem;
 }
 
-/* НОВЫЕ СТИЛИ ДЛЯ АККОРДЕОНА И КОМПОНЕНТОВ МИДа */
+/* НОВЫЕ СТИЛИ ДЛЯ АККОРДЕОНА И КОМПОНЕНТОВ */
 
 .foiv-details {
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
 }
 
 .foiv-details .foiv-header {
@@ -240,6 +256,9 @@ footer {
 
 .sections-container {
     margin-top: 30px;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
 }
 
 .section-header {
@@ -276,11 +295,12 @@ footer {
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.8s ease;
 }
 
 .section-content.active {
-    max-height: 5000px;
+    max-height: 50000px;
+    overflow: visible;
 }
 
 .subsection {
@@ -302,6 +322,7 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border: 1px solid #e9ecef;
     margin-bottom: 15px;
+    overflow: visible;
 }
 
 /* Стили для списков документов */
@@ -533,15 +554,207 @@ footer {
     border-bottom: 2px solid #bdc3c7;
 }
 
+/* ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ МИНЭКОНОМРАЗВИТИЯ */
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    overflow: visible;
+}
+
+.program-category {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.program-category h4 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1e3c72;
+    padding-bottom: 5px;
+}
+
+.subordinate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    overflow: visible;
+}
+
+.subordinate-card {
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.subordinate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.interaction-section {
+    margin-bottom: 30px;
+}
+
+.interaction-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.interaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    overflow: visible;
+}
+
+.interaction-card {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.interaction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.transfer-section {
+    margin-bottom: 20px;
+}
+
+.transfer-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.transfer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    overflow: visible;
+}
+
+.transfer-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.transfer-item:hover {
+    background: #e3f2fd;
+    transform: translateY(-1px);
+}
+
+.transfer-icon {
+    margin-right: 12px;
+    font-size: 1.1em;
+}
+
+.regulations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    overflow: visible;
+}
+
+.regulation-card {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.regulation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.regulation-card h5 {
+    color: #1e3c72;
+    margin-bottom: 8px;
+}
+
+.services-section {
+    margin-bottom: 25px;
+}
+
+.services-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.subservices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    overflow: visible;
+}
+
+.subservice-category {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.subservice-category h5 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.subservice-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subservice-category li {
+    padding: 6px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.subservice-category li:last-child {
+    border-bottom: none;
+}
+
+.society-section {
+    margin-bottom: 20px;
+}
+
+.society-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        height: auto;
     }
     
     .sidebar {
         flex: none;
         width: 100%;
+        position: static;
     }
     
     .sphere-filter {
@@ -584,6 +797,30 @@ footer {
     
     .timeline-year {
         left: -20px;
+    }
+    
+    .programs-grid,
+    .subordinate-grid,
+    .interaction-grid,
+    .transfer-grid,
+    .regulations-grid,
+    .subservices-grid {
+        grid-template-columns: 1fr;
+        overflow: visible;
+    }
+    
+    .transfer-item {
+        padding: 10px;
+    }
+    
+    .foiv-content {
+        padding: 1rem;
+        min-height: auto;
+    }
+    
+    .section-content.active {
+        max-height: none;
+        overflow: visible;
     }
 }
 
