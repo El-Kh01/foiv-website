@@ -89,5 +89,12 @@
         "shortName": "Росреестр",
         "sphere": "economic",
         "officialWebsite": "https://rosreestr.gov.ru"
+    },
+    {
+        "id": "mintrud",
+        "name": "Министерство труда и социальной защиты Российской Федерации",
+        "shortName": "Минтруд России",
+        "sphere": "social",
+        "officialWebsite": "https://mintrud.gov.ru"
     }
 ]
