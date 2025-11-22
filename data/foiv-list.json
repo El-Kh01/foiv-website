@@ -75,5 +75,12 @@
         "shortName": "Росздравнадзор",
         "sphere": "social",
         "officialWebsite": "https://roszdravnadzor.gov.ru"
+    },
+    {
+        "id": "rosakkreditatsiya",
+        "name": "Федеральная служба по аккредитации",
+        "shortName": "Росаккредитация",
+        "sphere": "economic",
+        "officialWebsite": "https://fsa.gov.ru"
     }
 ]
