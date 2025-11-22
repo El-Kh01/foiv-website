@@ -61,5 +61,12 @@
         "shortName": "Росмолодежь",
         "sphere": "social",
         "officialWebsite": "https://fadm.gov.ru"
+    },
+    {
+        "id": "rosgvardiya",
+        "name": "Федеральная служба войск национальной гвардии Российской Федерации",
+        "shortName": "Росгвардия",
+        "sphere": "security",
+        "officialWebsite": "https://rosguard.gov.ru"
     }
 ]
