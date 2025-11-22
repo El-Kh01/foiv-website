@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ФОИВы России - Информационная система</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Дополнительные стили для гарантированного решения проблемы */
+        body {
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 60px; /* Зарезервируем место для футера */
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            z-index: 1000;
+        }
+        
+        .foiv-content {
+            margin-bottom: 80px; /* Увеличиваем отступ снизу */
+        }
+        
+        .sections-container {
+            padding-bottom: 100px; /* Значительно увеличиваем отступ */
+        }
+    </style>
 </head>
 <body>
     <header>
