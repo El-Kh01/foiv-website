@@ -16,6 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px; /* Зарезервированное место для футера */
 }
 
 header {
@@ -58,7 +60,7 @@ header h1 {
 }
 
 main {
-    flex: 1 0 auto;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -157,7 +159,7 @@ main {
     height: auto;
     overflow: visible;
     flex: 1;
-    margin-bottom: 2rem;
+    margin-bottom: 100px; /* Увеличенный отступ */
 }
 
 .welcome-message {
@@ -166,60 +168,20 @@ main {
     padding: 3rem;
 }
 
-.foiv-header {
-    border-bottom: 2px solid #1e3c72;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-}
-
-.foiv-title {
-    color: #1e3c72;
-    margin-bottom: 0.5rem;
-}
-
-.foiv-official-link {
-    display: inline-block;
-    background: #1e3c72;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 1rem;
-    transition: background 0.3s ease;
-}
-
-.foiv-official-link:hover {
-    background: #2a5298;
-}
-
-.info-section {
-    margin-bottom: 2rem;
-}
-
-.info-section h3 {
-    color: #1e3c72;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.info-content {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 5px;
-    border-left: 4px solid #1e3c72;
-}
-
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 1.5rem 0;
-    margin-top: auto;
-    flex-shrink: 0;
-    position: relative;
-    z-index: 100;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* НОВЫЕ СТИЛИ ДЛЯ АККОРДЕОНА И КОМПОНЕНТОВ */
@@ -233,7 +195,7 @@ footer {
     min-height: auto;
     overflow: visible;
     width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .foiv-details .foiv-header {
@@ -283,7 +245,7 @@ footer {
     height: auto;
     min-height: auto;
     overflow: visible;
-    padding-bottom: 60px;
+    padding-bottom: 120px; /* Значительно увеличенный отступ */
 }
 
 .section-header {
@@ -327,7 +289,7 @@ footer {
 .section-content.active {
     max-height: 5000px;
     overflow: visible;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .subsection {
@@ -607,7 +569,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     overflow: visible;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Увеличенный отступ */
 }
 
 .subordinate-card {
