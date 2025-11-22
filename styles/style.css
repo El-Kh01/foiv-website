@@ -4,20 +4,12 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-    position: relative;
-    padding-bottom: 80px; /* Зарезервированное место для футера */
 }
 
 header {
@@ -25,7 +17,6 @@ header {
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex-shrink: 0;
 }
 
 header h1 {
@@ -59,12 +50,6 @@ header h1 {
     color: #1e3c72;
 }
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
 .container {
     display: flex;
     max-width: 1400px;
@@ -72,7 +57,6 @@ main {
     gap: 2rem;
     padding: 0 1rem;
     align-items: flex-start;
-    flex: 1;
 }
 
 .sidebar {
@@ -84,6 +68,8 @@ main {
     height: fit-content;
     position: sticky;
     top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-box {
@@ -101,6 +87,7 @@ main {
 .foiv-list {
     max-height: 600px;
     overflow-y: auto;
+    flex: 1;
 }
 
 .foiv-item {
@@ -143,11 +130,18 @@ main {
     display: inline-block;
 }
 
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #666;
+    font-size: 0.8rem;
+}
+
 .content {
     flex: 1;
     min-width: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .foiv-content {
@@ -158,8 +152,6 @@ main {
     min-height: 200px;
     height: auto;
     overflow: visible;
-    flex: 1;
-    margin-bottom: 100px; /* Увеличенный отступ */
 }
 
 .welcome-message {
@@ -168,20 +160,48 @@ main {
     padding: 3rem;
 }
 
-footer {
-    background: #333;
+.foiv-header {
+    border-bottom: 2px solid #1e3c72;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.foiv-title {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.foiv-official-link {
+    display: inline-block;
+    background: #1e3c72;
     color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.foiv-official-link:hover {
+    background: #2a5298;
+}
+
+.info-section {
+    margin-bottom: 2rem;
+}
+
+.info-section h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-content {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    border-left: 4px solid #1e3c72;
 }
 
 /* НОВЫЕ СТИЛИ ДЛЯ АККОРДЕОНА И КОМПОНЕНТОВ */
@@ -194,8 +214,6 @@ footer {
     height: auto;
     min-height: auto;
     overflow: visible;
-    width: 100%;
-    padding-bottom: 3rem;
 }
 
 .foiv-details .foiv-header {
@@ -245,7 +263,6 @@ footer {
     height: auto;
     min-height: auto;
     overflow: visible;
-    padding-bottom: 120px; /* Значительно увеличенный отступ */
 }
 
 .section-header {
@@ -289,7 +306,6 @@ footer {
 .section-content.active {
     max-height: 5000px;
     overflow: visible;
-    padding-bottom: 40px;
 }
 
 .subsection {
@@ -569,7 +585,6 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     overflow: visible;
-    margin-bottom: 40px; /* Увеличенный отступ */
 }
 
 .subordinate-card {
