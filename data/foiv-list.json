@@ -82,5 +82,12 @@
         "shortName": "Росаккредитация",
         "sphere": "economic",
         "officialWebsite": "https://fsa.gov.ru"
+    },
+    {
+        "id": "rosreestr",
+        "name": "Федеральная служба государственной регистрации, кадастра и картографии",
+        "shortName": "Росреестр",
+        "sphere": "economic",
+        "officialWebsite": "https://rosreestr.gov.ru"
     }
 ]
