@@ -68,5 +68,12 @@
         "shortName": "Росгвардия",
         "sphere": "security",
         "officialWebsite": "https://rosguard.gov.ru"
+    },
+    {
+        "id": "roszdravnadzor",
+        "name": "Федеральная служба по надзору в сфере здравоохранения",
+        "shortName": "Росздравнадзор",
+        "sphere": "social",
+        "officialWebsite": "https://roszdravnadzor.gov.ru"
     }
 ]
