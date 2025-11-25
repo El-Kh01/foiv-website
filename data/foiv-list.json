@@ -117,5 +117,12 @@
         "shortName": "ФАС России",
         "sphere": "economic",
         "officialWebsite": "https://fas.gov.ru"
+    },
+    {
+        "id": "minenergo",
+        "name": "Министерство энергетики Российской Федерации",
+        "shortName": "Минэнерго России",
+        "sphere": "economic",
+        "officialWebsite": "https://minenergo.gov.ru"
     }
 ]
