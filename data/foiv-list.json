@@ -166,5 +166,12 @@
     "shortName": "Роскомнадзор",
     "sphere": "security",
     "officialWebsite": "https://rkn.gov.ru"
+    },
+    {
+    "id": "fns",
+    "name": "Федеральная налоговая служба",
+    "shortName": "ФНС России",
+    "sphere": "economic",
+    "officialWebsite": "https://nalog.gov.ru"
 }
 ]
