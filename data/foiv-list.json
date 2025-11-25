@@ -173,5 +173,12 @@
     "shortName": "ФНС России",
     "sphere": "economic",
     "officialWebsite": "https://nalog.gov.ru"
+    },
+    {
+    "id": "minprirody",
+    "name": "Министерство природных ресурсов и экологии Российской Федерации",
+    "shortName": "Минприроды России",
+    "sphere": "economic",
+    "officialWebsite": "https://mnr.gov.ru"
 }
 ]
