@@ -110,5 +110,12 @@
         "shortName": "ФССП России",
         "sphere": "security",
         "officialWebsite": "https://fssp.gov.ru"
+    },
+    {
+        "id": "fas",
+        "name": "Федеральная антимонопольная служба",
+        "shortName": "ФАС России",
+        "sphere": "economic",
+        "officialWebsite": "https://fas.gov.ru"
     }
 ]
