@@ -201,5 +201,12 @@
         "shortName": "Минкультуры России",
         "sphere": "social",
         "officialWebsite": "https://culture.gov.ru"
+    },
+    {
+        "id": "rostrud",
+        "name": "Федеральная служба по труду и занятости",
+        "shortName": "Роструд",
+        "sphere": "social",
+        "officialWebsite": "https://rostrud.gov.ru"
     }
 ]
