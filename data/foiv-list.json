@@ -189,10 +189,17 @@
         "officialWebsite": "https://mintrans.gov.ru"
     },
     {
-    "id": "rosgidromet",
-    "name": "Федеральная служба по гидрометеорологии и мониторингу окружающей среды",
-    "shortName": "Росгидромет",
-    "sphere": "economic",
-    "officialWebsite": "https://meteorf.gov.ru"
-}
+        "id": "rosgidromet",
+        "name": "Федеральная служба по гидрометеорологии и мониторингу окружающей среды",
+        "shortName": "Росгидромет",
+        "sphere": "economic",
+        "officialWebsite": "https://meteorf.gov.ru"
+    },
+    {
+        "id": "minpros",
+        "name": "Министерство просвещения Российской Федерации",
+        "shortName": "Минпросвещения России",
+        "sphere": "social",
+        "officialWebsite": "https://edu.gov.ru"
+    }
 ]
