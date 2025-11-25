@@ -161,24 +161,31 @@
         "officialWebsite": "https://customs.gov.ru"
     },
     {
-    "id": "roskomnadzor",
-    "name": "Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций",
-    "shortName": "Роскомнадзор",
-    "sphere": "security",
-    "officialWebsite": "https://rkn.gov.ru"
+        "id": "roskomnadzor",
+        "name": "Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций",
+        "shortName": "Роскомнадзор",
+        "sphere": "security",
+        "officialWebsite": "https://rkn.gov.ru"
     },
     {
-    "id": "fns",
-    "name": "Федеральная налоговая служба",
-    "shortName": "ФНС России",
-    "sphere": "economic",
-    "officialWebsite": "https://nalog.gov.ru"
+        "id": "fns",
+        "name": "Федеральная налоговая служба",
+        "shortName": "ФНС России",
+        "sphere": "economic",
+        "officialWebsite": "https://nalog.gov.ru"
     },
     {
-    "id": "minprirody",
-    "name": "Министерство природных ресурсов и экологии Российской Федерации",
-    "shortName": "Минприроды России",
-    "sphere": "economic",
-    "officialWebsite": "https://mnr.gov.ru"
-}
+        "id": "minprirody",
+        "name": "Министерство природных ресурсов и экологии Российской Федерации",
+        "shortName": "Минприроды России",
+        "sphere": "economic",
+        "officialWebsite": "https://mnr.gov.ru"
+    },
+    {
+        "id": "mintrans",
+        "name": "Министерство транспорта Российской Федерации",
+        "shortName": "Минтранс России",
+        "sphere": "economic",
+        "officialWebsite": "https://mintrans.gov.ru"
+    }
 ]
