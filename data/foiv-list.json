@@ -152,5 +152,12 @@
         "shortName": "Росприроднадзор",
         "sphere": "economic",
         "officialWebsite": "https://rpn.gov.ru"
+    },
+    {
+        "id": "fts",
+        "name": "Федеральная таможенная служба",
+        "shortName": "ФТС России",
+        "sphere": "economic",
+        "officialWebsite": "https://customs.gov.ru"
     }
 ]
