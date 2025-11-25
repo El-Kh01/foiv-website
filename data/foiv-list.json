@@ -133,10 +133,17 @@
         "officialWebsite": "https://mcx.gov.ru"
     },
     {
-    "id": "minfin",
-    "name": "Министерство финансов Российской Федерации",
-    "shortName": "Минфин России",
-    "sphere": "economic",
-    "officialWebsite": "https://minfin.gov.ru"
-}
+        "id": "minfin",
+        "name": "Министерство финансов Российской Федерации",
+        "shortName": "Минфин России",
+        "sphere": "economic",
+        "officialWebsite": "https://minfin.gov.ru"
+    },
+    {
+        "id": "minpromtorg",
+        "name": "Министерство промышленности и торговли Российской Федерации",
+        "shortName": "Минпромторг России",
+        "sphere": "economic",
+        "officialWebsite": "https://minpromtorg.gov.ru"
+    }
 ]
