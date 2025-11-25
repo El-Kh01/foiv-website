@@ -159,5 +159,12 @@
         "shortName": "ФТС России",
         "sphere": "economic",
         "officialWebsite": "https://customs.gov.ru"
-    }
+    },
+    {
+    "id": "roskomnadzor",
+    "name": "Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций",
+    "shortName": "Роскомнадзор",
+    "sphere": "security",
+    "officialWebsite": "https://rkn.gov.ru"
+}
 ]
