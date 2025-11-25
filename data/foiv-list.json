@@ -124,5 +124,12 @@
         "shortName": "Минэнерго России",
         "sphere": "economic",
         "officialWebsite": "https://minenergo.gov.ru"
+    },
+    {
+        "id": "agriculture",
+        "name": "Министерство сельского хозяйства Российской Федерации",
+        "shortName": "Минсельхоз России",
+        "sphere": "economic",
+        "officialWebsite": "https://mcx.gov.ru"
     }
 ]
