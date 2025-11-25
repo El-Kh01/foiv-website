@@ -103,5 +103,12 @@
         "shortName": "ФСИН России",
         "sphere": "security",
         "officialWebsite": "https://fsin.gov.ru"
+    },
+    {
+        "id": "fssp",
+        "name": "Федеральная служба судебных приставов Российской Федерации",
+        "shortName": "ФССП России",
+        "sphere": "security",
+        "officialWebsite": "https://fssp.gov.ru"
     }
 ]
