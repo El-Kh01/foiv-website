@@ -145,5 +145,12 @@
         "shortName": "Минпромторг России",
         "sphere": "economic",
         "officialWebsite": "https://minpromtorg.gov.ru"
+    },
+    {
+        "id": "rosprirodnadzor",
+        "name": "Федеральная служба по надзору в сфере природопользования",
+        "shortName": "Росприроднадзор",
+        "sphere": "economic",
+        "officialWebsite": "https://rpn.gov.ru"
     }
 ]
