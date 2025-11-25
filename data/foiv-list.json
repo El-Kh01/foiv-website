@@ -215,5 +215,12 @@
         "shortName": "Роструд",
         "sphere": "social",
         "officialWebsite": "https://rostrud.gov.ru"
-    }
+    },
+    {
+    "id": "mchs",
+    "name": "Министерство Российской Федерации по делам гражданской обороны, чрезвычайным ситуациям и ликвидации последствий стихийных бедствий",
+    "shortName": "МЧС России",
+    "sphere": "security",
+    "officialWebsite": "https://www.mchs.gov.ru"
+}
 ]
