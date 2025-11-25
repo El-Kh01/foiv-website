@@ -96,5 +96,12 @@
         "shortName": "Минтруд России",
         "sphere": "social",
         "officialWebsite": "https://mintrud.gov.ru"
+    },
+    {
+        "id": "fsin",
+        "name": "Федеральная служба исполнения наказаний",
+        "shortName": "ФСИН России",
+        "sphere": "security",
+        "officialWebsite": "https://fsin.gov.ru"
     }
 ]
