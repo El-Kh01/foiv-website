@@ -187,5 +187,12 @@
         "shortName": "Минтранс России",
         "sphere": "economic",
         "officialWebsite": "https://mintrans.gov.ru"
-    }
+    },
+    {
+    "id": "rosgidromet",
+    "name": "Федеральная служба по гидрометеорологии и мониторингу окружающей среды",
+    "shortName": "Росгидромет",
+    "sphere": "economic",
+    "officialWebsite": "https://meteorf.gov.ru"
+}
 ]
