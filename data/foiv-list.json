@@ -196,10 +196,10 @@
         "officialWebsite": "https://meteorf.gov.ru"
     },
     {
-        "id": "minpros",
-        "name": "Министерство просвещения Российской Федерации",
-        "shortName": "Минпросвещения России",
+        "id": "mincult",
+        "name": "Министерство культуры Российской Федерации",
+        "shortName": "Минкультуры России",
         "sphere": "social",
-        "officialWebsite": "https://edu.gov.ru"
+        "officialWebsite": "https://culture.gov.ru"
     }
 ]
